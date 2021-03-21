@@ -19,5 +19,5 @@ delete memberObject.manager
 console.log(memberObject.manager) // #undefind
 
 
-//3.2 객체와 반복문
+
 

@@ -16,6 +16,7 @@ while( i < memberArray.length) {
     i = i + 1;
 }
 console.groupEnd('array loop');
+
 //for 반복문
 console.group('object loop');
 for(var name in memberObject ) {

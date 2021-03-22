@@ -5,13 +5,21 @@ class Person{
         this.second = second;
     }
     sum() {
-        return 'prototype: ' +(this.first+this.second);
+        return this.first+this.second;
     }
 }
 
 class PersonPlus extends Person {
+    constructor(name, first, second, third) {
+        super(name, first, second);
+        this.third = third
+    }
+
+    sum() {
+        return super.sum() + this.third;
+    }
     avg() {
-        return 'extends:'+((this.first+this.second)/2);
+        return 'extends:'+((this.first+this.third)/2);
     }
 }
 //상속기능이 필요한 이유
@@ -21,9 +29,9 @@ Person.prototype.sum_score = function() {
 }
 
 
-var kim = new PersonPlus('kim', 20, 30);
+var kim = new PersonPlus('kim', 20, 40, 100);
 // kim.sum = function(){
 //     return 'this: ' + (this.first+this.second);
 // }
 
-console.log(kim.avg()); 
+console.log(kim.sum()); 

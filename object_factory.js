@@ -1,8 +1,5 @@
 // constructor가 무엇인가?
 // consytuvtor는 객체를 만들어 내는 공자이라고 생각하면 된다.
-// 예를 들어 
-
-
 
 var kim = {
     name:'kim',

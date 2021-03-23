@@ -22,7 +22,7 @@ class PersonPlus extends Person {
         return 'extends:'+((this.first+this.third)/2);
     }
 }
-//상속기능이 필요한 이유
+
 
 Person.prototype.sum_score = function() {
     return "prototype:" + (this.first + this.first);
